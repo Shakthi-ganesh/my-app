@@ -1,12 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import Navbar from './components/Navbar';
+import TextForm from './components/TextForm';
 function App() {
   return (
-  <div className="blank">
-    lovely
-  </div>
+    <>
+     <Navbar anything="Textutil" kuchbhi="about"/>
+     <div className="container">
+     <TextForm heading="Enter text to analyze"/>
+     </div>
+    
+    </>
+
   );
 }
+
 
 export default App;
