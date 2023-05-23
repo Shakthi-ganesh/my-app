@@ -10,7 +10,7 @@ export default function TextFrom(props) {
     setText(newText);
   }
   const handlelowClick=()=>{
-    let newtext=text.toLocaleLowerCase();
+    let newtext=text.toLowerCase();
     setText(newtext);
   }
   const handleOnChange=(event)=>{
@@ -37,11 +37,11 @@ export default function TextFrom(props) {
   }
   const capital = () => {
     let newText = text.split(" ").map((currentValue) => {
-        let newText = currentValue[0].toUpperCase() + currentValue.slice(1);
-        return newText;
+        let newText1 = currentValue[0].toUpperCase() + currentValue.slice(1);
+        return newText1;
     });
     setText(newText.join(" "));
-}
+    }
    
   
   const [text,setText]=useState("enter text");
